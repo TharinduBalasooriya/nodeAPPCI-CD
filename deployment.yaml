@@ -5,7 +5,7 @@ metadata:
 
 spec:
   replicas: 2
-  selectors:
+  selector:
     matchLables:
       app: node-hello-app
   template:
