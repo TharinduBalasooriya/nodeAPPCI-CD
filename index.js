@@ -11,5 +11,10 @@ app.get('/', (req, res) => {
   res.send(result);
 });
 
+app.get('/api', (req, res) => {
+  let result="API working"
+  res.send(result);
+});
+
 app.listen(PORT);
 console.log(`Running on http://${HOST}:${PORT}`);
