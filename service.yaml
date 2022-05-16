@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: node-hello-app-service
 spec:
-  type: LoadBalancer
-  ports:
-    - port: 80
-      targetPort: 8080
+  type: NodePort
   selector:
-    app: node-hello-app
+    app: webapp
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      nodePort: 8080
