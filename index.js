@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api', (req, res) => {
-  let result="API working"
+  let result="API working 2"
   res.send(result);
 });
 
