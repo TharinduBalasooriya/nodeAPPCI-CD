@@ -10,7 +10,7 @@ spec:
       app: node-hello-app
   template:
     metadata:
-      lables:
+      labels:
        app: node-hello-app
     spec:
       containers:
