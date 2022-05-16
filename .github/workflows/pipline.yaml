@@ -54,6 +54,12 @@ jobs:
     steps:
       - 
         run: echo "Deplyment started"
+    #Authencate GCP
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v0'
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+        run: echo "Logged in to GCP"
 
 
       
